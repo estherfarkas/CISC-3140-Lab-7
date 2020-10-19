@@ -1,0 +1,30 @@
+Script started on Sun Oct 18 21:19:49 2020
+[?1034hbash-3.2$ ssh efarkas@146.245.252.28
+Access to Brooklyn College computers is restricted to authorized users
+        and approved educational and research purposes, only.
+efarkas@146.245.252.28's password: 
+Last login: Sun Oct 18 21:05:33 2020 from pool-100-12-109-46.nycmny.fios.verizon.net
+]0;efarkas@sol28:~[?1034h[efarkas@sol28 ~]$ cd CISC-41[K[K3140/Lab7
+]0;efarkas@sol28:~/CISC-3140/Lab7[efarkas@sol28 Lab7]$ ls
+HelloWorld7.class  HelloWorld7.java  lab7.txt  Makefile  [0m[38;5;27mRepo7[0m
+]0;efarkas@sol28:~/CISC-3140/Lab7[efarkas@sol28 Lab7]$ cat Makefile
+#The executable file "HelloWorld7" depends on the the object file of the same name
+#Build HelloWorld7
+#README 
+# The point of this makefile is to instruct the make command to build programs according the specifications in this file
+#make HelloWorld7.java is rebuilding the java file without recompiling the entire file
+# this is helpful when dealing with minor changed in large projects. 
+#Test1 is there to test the make function on the terminal. Test1 runs to make sure there are no missing separators in the makefile that would prevent its function.
+
+HelloWorld7.java:
+	echo "This is how to use make to run a java file"
+Test1:
+	@echo "This is testing the makefile"
+]0;efarkas@sol28:~/CISC-3140/Lab7[efarkas@sol28 Lab7]$ make test1[K[K[K[K[KTest1
+This is testing the makefile
+]0;efarkas@sol28:~/CISC-3140/Lab7[efarkas@sol28 Lab7]$ make HelloWorld,[K.[K7.java
+make: `HelloWorld7.java' is up to date.
+]0;efarkas@sol28:~/CISC-3140/Lab7[efarkas@sol28 Lab7]$ exit
+logout
+Connection to 146.245.252.28 closed.
+bash-3.2$ 
